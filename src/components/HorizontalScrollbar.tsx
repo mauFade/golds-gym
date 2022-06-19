@@ -40,7 +40,7 @@ const HorizontalScrollbar = (Props: IPropsScrollbar) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {Props.data.map((item: any) => (
-        <Box key={item.id || item} itemId={item.id || item} title={item.id || item} m="0 40px">
+        <Box key={item.id || item} itemID={item.id || item} title={item.id || item} m="0 40px">
           {Props.isBodyPart == true ? (
             <BodyPart item={item} bodyPart={Props.bodyPart} setBodyPart={Props.setBodyPart} />
           ) : (
